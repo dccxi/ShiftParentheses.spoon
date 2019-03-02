@@ -1,14 +1,14 @@
 # ShiftParentheses.spoon
 
-Supercharge your <kbd>shift</kbd> key. Tap it for <kbd>escape</kbd>. Hold it for <kbd>shift</kbd>.
+Supercharge your <kbd>shift</kbd> key. Tap it for parentheses. Hold it for <kbd>shift</kbd>.
 
 ### A more useful shift key
 
-As Steve Losh points out in his [Modern Space Cadet](http://stevelosh.com/blog/2012/10/a-modern-space-cadet/#shift-escape) post, there are "keys you hold down to change how other keys behave, but that (usually) don’t do anything if you use them on their own" (e.g., <kbd>shift</kbd>), and there are "keys that you press and release but don’t want to 'repeat' as you hold them" (e.g., <kbd>escape</kbd>). "There are two [distinctly] different ways to use [these keys] and they’re each only useful in one of those ways. This means that we can *combine* them onto a single key without losing any useful functionality!"
+As Steve Losh points out in his [Modern Space Cadet](http://stevelosh.com/blog/2012/10/a-modern-space-cadet/#control-escape) post, there are "keys you hold down to change how other keys behave, but that (usually) don’t do anything if you use them on their own" (e.g., <kbd>shift</kbd>), and there are "keys that you press and release but don’t want to 'repeat' as you hold them" (e.g., parentheses). "There are two [distinctly] different ways to use [these keys] and they’re each only useful in one of those ways. This means that we can *combine* them onto a single key without losing any useful functionality!"
 
 With that in mind, we can teach the <kbd>shift</kbd> key to pull double duty:
 
-- If <kbd>shift</kbd> is pressed and released in isolation, we can interpret it as <kbd>escape</kbd>
+- If <kbd>shift</kbd> is pressed and released in isolation, we can generate a pair of parentheses and locate the cursor between them
 - If <kbd>shift</kbd> is held down and used in combination with another key, then we can let it provide the normal <kbd>shift</kbd> key behavior
 
 ## Dependencies
@@ -31,12 +31,6 @@ cd ~/.hammerspoon/Spoons/ShiftParentheses.spoon
 
 script/setup
 ```
-
-#### Optional: You're just a few seconds away from a [more useful caps lock key](#optional-a-more-useful-caps-lock-key)
-
-With one more bit of setup, you'll be able to hold <kbd>caps lock</kbd> for <kbd>shift</kbd>, and tap <kbd>caps lock</kbd> for <kbd>escape</kbd>:
-
-Open *System Preferences*, navigate to *Keyboard > Modifier Keys*, and set the <kbd>caps lock</kbd> key to <kbd>shift</kbd>. [[screenshot]](https://user-images.githubusercontent.com/2988/27111039-7f620442-507b-11e7-9bcf-93d46e14af13.png)
 
 Now you're ready to rock. 🤘
 

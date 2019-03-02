@@ -10,8 +10,8 @@ brew bundle check || brew bundle
 
 # Prepare custom settings for Hammerspoon
 mkdir -p ~/.hammerspoon
-if ! grep -sq "ControlEscape" ~/.hammerspoon/init.lua; then
-  echo "hs.loadSpoon('ControlEscape'):start() -- Load Hammerspoon bits from https://github.com/jasonrudolph/ControlEscape.spoon" >> ~/.hammerspoon/init.lua
+if ! grep -sq "ShiftParentheses" ~/.hammerspoon/init.lua; then
+  echo "hs.loadSpoon('ShiftParentheses'):start() -- Load Hammerspoon bits from https://github.com/dccxi/ShiftParentheses.spoon" >> ~/.hammerspoon/init.lua
 fi
 
 # If Hammerspoon is already running, kill it so we can pick up the new config
